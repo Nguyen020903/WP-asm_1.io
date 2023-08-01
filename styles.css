@@ -1,3 +1,60 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 header {
-    background-color: aqua;
+    background-color: #2f80ed;
+}
+
+.flex-container div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/** navigation bar **/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-header {
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-list li a:hover {
+    background-color: #f0f0f0;
 }
