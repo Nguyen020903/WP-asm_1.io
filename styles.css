@@ -73,6 +73,27 @@ header {
     background-color: #f0f0f0;
 }
 
+/* body */
+.body-content {
+    background-color: red;
+    margin-top: 20px;
+    padding-top: 8px;
+}
+
+.body-content div {
+    text-align: center;
+}
+
+.body-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.book {
+    display: contents;
+}
+
 /* footer */
 .flex-container-footer {
     display: flex;
@@ -84,7 +105,7 @@ header {
     display: flex;
 }
 
-.footer-nav-content{
+.footer-nav-content {
     display: block;
     padding-left: 8px;
 }
