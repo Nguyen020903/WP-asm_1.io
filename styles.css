@@ -4,14 +4,27 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0px;
+}
+
 header {
     background-color: #2f80ed;
 }
 
-.flex-container div {
-    display: inline-block;
-    vertical-align: middle;
+.header-item {
+    display: contents;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* .flex-container div {
+
+} */
 
 /** navigation bar **/
 .navbar {
@@ -19,6 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    height: auto;
 }
 
 .navbar-header {
@@ -52,9 +66,25 @@ header {
 .nav-list li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 12px;
 }
 
 .nav-list li a:hover {
     background-color: #f0f0f0;
+}
+
+/* footer */
+.flex-container-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav-content{
+    display: block;
+    padding-left: 8px;
 }

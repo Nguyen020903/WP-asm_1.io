@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Book Shop</title>
-<link rel="stylesheet" href="styles.css">
-<header>
-    <div class="flex-container">
-        <div>
-            <img src="Assets\Images\ph.png">
-        </div>
-        <div>
-            <h1>The Book Shop</h1>
-        </div>
-        <div>
-            <nav class="navbar">
-                <div class="navbar-header">
-                    <button class="hamburger">&#9776;</button>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Category 1</a></li>
-                    <li><a href="#">Category 2</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-
+    <header>
+        <div class="flex-container">
+            <div class="header-item">
+                <img src="Assets\Images\ph.png">
+            </div>
+            <!-- <div>
+                <h1>The Book Shop</h1>
+            </div> -->
+            <div class="header-item">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button class="hamburger">&#9776;</button>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
 <footer>
-    <ul class="footer-nav">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
+    <div class="flex-container-footer">
+        <ul class="footer-nav" style="display: flex;">
+            <li class="footer-nav-content"><a href="#">About Us</a></li>
+            <li class="footer-nav-content"><a href="#">Privacy Policy</a></li>
+            <li class="footer-nav-content"><a href="#">Terms</a></li>
+            <li class="footer-nav-content"><a href="#">Copyright</a></li>
+            <li class="footer-nav-content"><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
 </footer>
 
 </html>
