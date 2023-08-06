@@ -23,9 +23,18 @@ header {
     align-items: flex-end;
 }
 
-/* .flex-container div {
+/* head breadcrumb */
+.head-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
 
-} */
+.head-flex-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+
 
 /** navigation bar **/
 .navbar {
@@ -77,32 +86,22 @@ header {
 }
 
 /* body */
-.body-content {
-    background-color: white;
-    margin-top: 20px;
-    padding-top: 8px;
-}
-
-.body-content div {
-    text-align: center;
-}
-
-.body-flex-container {
+.buying-section {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.book {
-    display: contents;
+.small-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.category {
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
+.small-container img {
+    margin: 10px 0 10px 0;
 }
 
+.book-detail
 /* button */
 .btn {
     text-align: center;
