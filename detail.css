@@ -2,6 +2,15 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 body {
@@ -10,17 +19,53 @@ body {
 
 /* header */
 header {
-    background-color: #333;
+    height: 70px;
+    position: relative;
 }
 
-.header-item {
-    display: contents;
-}
-
-.flex-container {
+/** navigation bar **/
+nav{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    background-color: #333;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 10px;
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    border-radius: 2px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
+}
+nav .navbar-btn{
+    display: none;
+}
+
+.logo img{
+    height: 45px;
 }
 
 /* head breadcrumb */
@@ -31,57 +76,6 @@ header {
 
 .head-flex-container a {
     text-decoration: none;
-    color: #333;
-}
-
-
-
-/** navigation bar **/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: auto;
-}
-
-.navbar-header {
-    padding: 10px;
-}
-
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-list li {
-    margin-right: 20px;
-}
-
-.nav-list li:last-child {
-    margin-right: 0;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 12px;
-    font-size: large;
-}
-
-.nav-list li a:hover {
-    background-color: #f0f0f0;
     color: #333;
 }
 
