@@ -1,3 +1,10 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hai Nguyen
+ID: Your student ids3978275
+Acknowledgement: AI and help from senior */
 * {
     margin: 0px;
     padding: 0px;
@@ -38,8 +45,8 @@ nav {
     z-index: 1;
     width: 100%;
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 
 nav ul {
@@ -52,12 +59,12 @@ nav ul li a {
     height: 40px;
     line-height: 43px;
     margin: 8px;
-    padding: 0px 10px;
+    padding: 0 10px;
     display: flex;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    color: #f9f9f9;
+    color: #fff;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
 }
@@ -69,7 +76,7 @@ nav ul li a:hover {
     box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
 }
 
-nav .navbar-btn {
+nav .navbar-toggle {
     display: none;
 }
 
@@ -172,7 +179,7 @@ footer {
     margin-top: 50px;
 }
 
-footer ul {
+.footer-list {
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -182,16 +189,15 @@ footer ul {
     text-align: right;
 }
 
-footer ul a {
+.footer-list a {
     color: #fff;
     text-decoration: none;
     opacity: 0.8;
 }
 
-footer ul li {
+.footer-list li {
     display: inline-block;
     padding: 0 15px;
-
 }
 
 /****Responsive****/
@@ -238,7 +244,7 @@ footer ul li {
         user-select: none;
     }
 
-    .nav-icon {
+    .hamburger {
         background-color: #fff;
         display: block;
         height: 2px;
@@ -247,8 +253,8 @@ footer ul li {
         width: 18px;
     }
 
-    .navbar-icon .nav-icon:before,
-    .navbar-icon .nav-icon::after {
+    .navbar-icon .hamburger:before,
+    .navbar-icon .hamburger::after {
         background: #fff;
         content: "";
         display: block;
@@ -258,36 +264,35 @@ footer ul li {
         width: 100%;
     }
 
-    .navbar-icon .nav-icon:before {
+    .navbar-icon .hamburger:before {
         top: 5px;
     }
 
-    .navbar-icon .nav-icon:after {
+    .navbar-icon .hamburger:after {
         top: -5px;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon {
+    .navbar_btn:checked~.navbar-icon .hamburger {
         background: transparent;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon:before {
+    .navbar_btn:checked~.navbar-icon .hamburger:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon:after {
+    .navbar_btn:checked~.navbar-icon .hamburger:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .navbar-btn {
+    .navbar_btn {
         display: none;
     }
 
-    .navbar-btn:checked~.navbar {
+    .navbar_btn:checked~.navbar {
         display: block;
     }
-
     /*row and columns*/
     .flex-container {
         display: flex;
