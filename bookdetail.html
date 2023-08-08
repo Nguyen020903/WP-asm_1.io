@@ -1,122 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Book Shop</title>
+    <title>The Book Store</title>
     <link rel="stylesheet" href="detail.css">
 </head>
 
 <body>
     <header>
-        <div class="flex-container">
-            <div class="header-item">
-                <img src="Assets\Images\ph.png">
-            </div>
-            <!-- <div>
-                <h1>The Book Shop</h1>
-            </div> -->
-            <div class="header-item">
-                <nav class="navbar">
-                    <div class="navbar-header">
-                        <button class="hamburger">&#9776;</button>
-                    </div>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="subcategory1.html">Category 1</a></li>
-                        <li><a href="subcategory1.html">Category 2</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="Image/logo1.png" alt="logo">
+            </a>
+            <input class="navbar-btn" type="checkbox" id="navbar-btn">
+            <label class="navbar-icon" for="navbar-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subcategory1.html">Category I</a></li>
+                <li><a href="subcategory1.html">Category II</a></li>
+                <li><a href="subcategory1.html">Category III</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="head-flex-container">
-        <div>
-            <h2><a href="#">Home</a></h2>
-        </div>
-        <h2>>></h2>
-        <div>
-            <h2><a href="#">Category</a></h2>
-        </div>
-        <h2>>></h2>
-        <div>
-            <h2>Book name</h2>
-        </div>
-    </div>
+    <main>
+        <!--Breadcrumb-->
 
-    <section class="buying-section">
-        <div>
-            <img src="Assets\Images\ph.png" alt="">
-        </div>
-        <div class="small-container">
-            <img src="Assets\Images\ph.png" alt="">
-            <img src="Assets\Images\ph.png" alt="">
-            <img src="Assets\Images\ph.png" alt="">
-        </div>
-        <div>
-            <h2>Book Price</h2>
-            <button id="btn">Add to Cart</button>
-        </div>
-    </section>
-    <section class="book-detail">
-        <h2>Book Detail</h2>
-        <p>Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-            Book description
-        </p>
-    </section>
-
-</body>
-<footer>
-    <div class="flex-container-footer">
-        <ul class="footer-nav" style="display: flex;">
-            <li class="footer-nav-content"><a href="#">About Us</a></li>
-            <li class="footer-nav-content"><a href="#">Privacy Policy</a></li>
-            <li class="footer-nav-content"><a href="#">Terms</a></li>
-            <li class="footer-nav-content"><a href="#">Copyright</a></li>
-            <li class="footer-nav-content"><a href="#">Contact Us</a></li>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="subcategory1.html">Category</a></li>
+            <li>Natural Skincare For Daily Tips</li>
         </ul>
-    </div>
-</footer>
+
+        <!--Main content-->
+        <div class="row">
+            <section>
+                <div class="column" id="left">
+                    <img src="Assets\Images\ph.png" alt="book-cover1" width="400px" height="510">
+                </div>
+                <div class="column" id="middle">
+                    <img src="Assets\Images\ph.png" alt="book-cover1" height="170">
+                    <br>
+                    <img src="Assets\Images\ph.png" alt="book-cover1" height="170">
+                    <br>
+                    <img src="Assets\Images\ph.png" alt="book-cover1" height="170">
+                </div>
+                <div class="column" id="right">
+                    <h2>
+                        <bold>11.99$</bold>
+                    </h2>
+                    <br>
+                    <button type="button">Add to cart</button>
+                </div>
+
+
+                <div id="book-info">
+                    <h2>Natural Skincare For Daily Tips</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nibh quis justo rutrum, a
+                        fermentum arcu maximus.
+                        Quisque ultricies dapibus sapien, sit amet commodo sem interdum sit amet
+                        . Nulla maximus, velit scelerisque tempor hendrerit, mauris sem scelerisque purus, vel fringilla
+                        mi augue nec leo. Integer sed purus convallis, aliquam turpis vel, luctus nisl.</p>
+                    <p>Pellentesque varius nisi sed auctor posuere. Ut arcu elit, ultricies a porttitor ut, vulputate
+                        sed augue.
+                        Sed eu nulla et nisi tristique porta id vitae nunc. Phasellus sodales elit in sem aliquet
+                        consectetur.
+                        Aliquam varius risus vitae neque efficitur, vitae commodo mi pretium. Praesent euismod lectus
+                        vel fermentum laoreet.
+                        Donec quis porttitor augue.
+                    </p>
+                </div>
+        </div>
+
+    </main>
+    <footer>
+        <ul class="list">
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Copyright</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+</body>
 
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Book Shop</title>
+    <title>The Book Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <img src="Assets\Images\ph.png" alt="logo">
+                <img src="Assets\Images\logo.png" alt="logo">
             </a>
             <input class="navbar-btn" type="checkbox" id="navbar-btn">
             <label class="navbar-icon" for="navbar-btn">
@@ -20,63 +20,80 @@
             </label>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="category.html">Category I</a></li>
-                <li><a href="category.html">Category II</a></li>
-                <li><a href="category.html">Category III</a></li>
+                <li><a href="subcategory1.html">Category I</a></li>
+                <li><a href="subcategory1.html">Category II</a></li>
+                <li><a href="subcategory1.html">Category III</a></li>
             </ul>
         </nav>
     </header>
-    <section class="body-content">
-        <div>
-            <a class="category" href="">Category</a>
-        </div>
-        <div class="body-flex-container">
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
+    <main>
+        <div class="category1">
+            <a class="c1" href="subcategory1.html">
+                <h1>Category I</h1>
+            </a>
+            <div class="c1item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover1.png" alt="book-cover1" width="200px">
+                    <h2>Natural Skincare For Daily Tips</h2>
+                </a>
             </div>
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
+            <div class="c1item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover2.png" alt="book-cover2" width="200px">
+                    <h2>Daily Beauty Tips</h2>
+                </a>
             </div>
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="body-content">
-        <div>
-            <a class="category" href="">Category</a>
-        </div>
-        <div class="body-flex-container">
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
-            </div>
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
-            </div>
-            <div class="book">
-                <img src="Assets\Images\ph.png" alt="">
+            <div class="c1item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover3.png" alt="book-cover3" width="200px">
+                    <h2>Woman Story</h2>
+                </a>
             </div>
         </div>
-    </section>
 
-    <div class="btn">
-        <button id="more-category-btn">More Category</button>
-    </div>
-    <script src="script.js"></script>
-
-
-</body>
-<footer>
-    <div class="flex-container-footer">
-        <ul class="footer-nav" style="display: flex;">
-            <li class="footer-nav-content"><a href="#">About Us</a></li>
-            <li class="footer-nav-content"><a href="#">Privacy Policy</a></li>
-            <li class="footer-nav-content"><a href="#">Terms</a></li>
-            <li class="footer-nav-content"><a href="#">Copyright</a></li>
-            <li class="footer-nav-content"><a href="Contact.html">Contact Us</a></li>
+        <div class="category2">
+            <a class="c2" href="subcategory1.html">
+                <h1>Category II</h1>
+            </a>
+            <div class="c2item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover4.png" alt="book-cover4" width="200px">
+                    <h2>My Companion</h2>
+                </a>
+            </div>
+            <div class="c2item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover5.png" alt="book-cover5" width="200px">
+                    <h2>Crisis</h2>
+                </a>
+            </div>
+            <div class="c2item">
+                <a class="b1" href="bookdetail.html">
+                    <img src="Image/book-cover6.png" alt="book-cover6" width="200px">
+                    <h2>Mindset</h2>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="list">
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Copyright</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
         </ul>
-    </div>
-</footer>
+    </footer>
+</body>
 
 </html>

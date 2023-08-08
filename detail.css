@@ -1,30 +1,35 @@
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+body {
+    background-color: #f9f9f9;
+}
+
+.logo img {
+    max-height: 100%;
+    height: 45px;
 }
 
 ul {
     list-style: none;
 }
 
-body {
-    margin: 0px;
+a {
+    text-decoration: none;
 }
 
-/* header */
+/*header*/
 header {
+    width: 100%;
     height: 70px;
     position: relative;
 }
 
-/** navigation bar **/
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,12 +41,14 @@ nav{
     left: 0px;
     top: 0px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
-nav ul li a{
+
+nav ul li a {
     height: 40px;
     line-height: 43px;
     margin: 8px;
@@ -50,93 +57,243 @@ nav ul li a{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    color: #fff;
+    color: #f9f9f9;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     border-radius: 2px;
-    background-color: #fff;
-    color: #333;
+    background-color: sandybrown;
+    color: #FFDEAD;
     box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
 }
-nav .navbar-btn{
+
+nav .navbar-btn {
     display: none;
 }
 
-.logo img{
-    height: 45px;
-}
-
-/* head breadcrumb */
-.head-flex-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.head-flex-container a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* body */
-.buying-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.small-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.small-container img {
-    margin: 10px 0 10px 0;
-}
-
-.book-detail
-/* button */
-.btn {
+/*body*/
+/*breadcrumb*/
+.breadcrumb {
     text-align: center;
-    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-left: 9%;
 }
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fff;
+}
+
+ul.breadcrumb li {
+    color: #333;
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #333;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    color: #333 ;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: sienna;
+    text-decoration: none;
+}
+
+/*Main content*/
+#right {
+    padding: 70px 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    justify-content: center;
+}
+
+.column {
+
+    text-align: center;
+    float: left;
+    padding: 10px;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #4CAF50;
-    color: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-  }
+    color: sienna;
+    border-color: sienna;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: tan;
+}
 
+/*book-info*/
+#book-info {
+    color: sienna;
+    float: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
 
-/* footer */
+#book-info p {
+    background-color: #FFDEAD;
+}
+
+/*footer*/
 footer {
+    padding: 25px 0;
     background-color: #333;
-    padding: 20px;
-    text-decoration: none;
-}
-.flex-container-footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    margin-top: 8px;
+    margin-top: 50px;
 }
 
-.footer-nav {
-    display: flex;
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-.footer-nav-content {
-    display: block;
-    padding-left: 12px;
-}
-
-.footer-nav-content a {
+footer ul a {
     color: #fff;
     text-decoration: none;
-    font-size: large;
+    opacity: 0.8;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+/****Responsive****/
+
+
+@media screen and (max-width:960px) {
+
+    /*navbar*/
+    nav {
+        justify-content: space-between;
+        height: 65px;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: tan;
+        border-bottom: 4px solid sienna;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    nav .navbar li a {
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid sienna;
+    }
+
+    nav .navbar-icon {
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    nav .navbar-icon .nav-icon {
+        background-color: tan;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: 0.2s ease-out;
+        width: 18px;
+    }
+
+    nav .navbar-icon .nav-icon:before,
+    nav .navbar-icon .nav-icon::after {
+        background: tan;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.3s;
+        width: 100%;
+    }
+
+    nav .navbar-icon .nav-icon:before {
+        top: 5px;
+    }
+
+    nav .navbar-icon .nav-icon:after {
+        top: -5px;
+    }
+
+    nav .navbar-btn:checked~.navbar-icon .nav-icon {
+        background: transparent;
+    }
+
+    nav .navbar-btn:checked~.navbar-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    nav .navbar-btn:checked~.navbar-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav .navbar-btn {
+        display: none;
+    }
+
+    nav .navbar-btn:checked~.navbar {
+        display: block;
+    }
+
+    /*row and columns*/
+    .column {
+        width: 100%;
+    }
+
+    #middle {
+        display: flex;
+        justify-content: space-around;
+
+    }
 }
