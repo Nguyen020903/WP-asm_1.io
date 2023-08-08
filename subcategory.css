@@ -69,7 +69,7 @@ nav ul li a:hover {
     box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
 }
 
-nav .navbar-btn {
+nav .navbar_btn {
     display: none;
 }
 
@@ -80,7 +80,7 @@ main {
     bottom: 10px;
 }
 
-.category1 {
+.category_1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -96,15 +96,15 @@ main {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.category1 .c1item,
-.category2 .c2item {
+.category_1 .c1item,
+.category_2 .c2item {
     order: 0;
     background-size: 120%;
     background-color: #f9f9f9;
     min-height: 300px;
 }
 
-.category2 {
+.category_2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -139,13 +139,13 @@ main {
 }
 
 /* Book's cover and title */
-.category1 .b1 h2 {
+.category_1 .b1 h2 {
     color: #333;
     width: 200px;
     text-align: center;
 }
 
-.category2 .b1 h2 {
+.category_2 .b1 h2 {
     color: #333;
     width: 200px;
     text-align: center;
@@ -165,7 +165,7 @@ footer ul {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 0;
-    text-align: center;
+    text-align: right;
 }
 
 footer ul a {
@@ -224,7 +224,7 @@ footer ul li {
         user-select: none;
     }
 
-    .nav-icon {
+    .hamburger {
         background-color: #fff;
         display: block;
         height: 2px;
@@ -233,8 +233,8 @@ footer ul li {
         width: 18px;
     }
 
-    .navbar-icon .nav-icon:before,
-    .navbar-icon .nav-icon::after {
+    .navbar-icon .hamburger:before,
+    .navbar-icon .hamburger::after {
         background: #fff;
         content: "";
         display: block;
@@ -244,33 +244,33 @@ footer ul li {
         width: 100%;
     }
 
-    .navbar-icon .nav-icon:before {
+    .navbar-icon .hamburger:before {
         top: 5px;
     }
 
-    .navbar-icon .nav-icon:after {
+    .navbar-icon .hamburger:after {
         top: -5px;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon {
+    .navbar_btn:checked~.navbar-icon .hamburger {
         background: transparent;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon:before {
+    .navbar_btn:checked~.navbar-icon .hamburger:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .navbar-btn:checked~.navbar-icon .nav-icon:after {
+    .navbar_btn:checked~.navbar-icon .hamburger:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .navbar-btn {
+    .navbar_btn {
         display: none;
     }
 
-    .navbar-btn:checked~.navbar {
+    .navbar_btn:checked~.navbar {
         display: block;
     }
 }

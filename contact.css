@@ -75,7 +75,7 @@ nav .navbar-btn {
 
 /*body*/
 .container {
-    color: sienna;
+    color: #333;
 }
 
 /* Style inputs, select elements and textareas */
@@ -87,7 +87,8 @@ textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     box-sizing: border-box;
     resize: vertical;
 }
@@ -101,11 +102,12 @@ label {
 /* Style the submit button */
 input[type=submit],
 input[type=reset] {
-    background-color: sandybrown;
-    color: sienna;
+    background-color: #fff;
+    color: #333;
     padding: 12px 20px;
     margin: 2px;
-    border: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     cursor: pointer;
     float: right;
@@ -114,7 +116,7 @@ input[type=reset] {
 /* Style the container */
 .container {
     border-radius: 5px;
-    background-color: #FFDEAD;
+    background-color: #f9f9f9;
     padding: 20px;
 }
 
@@ -159,7 +161,7 @@ footer ul {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 0;
-    text-align: center;
+    text-align: right;
 }
 
 footer ul a {
