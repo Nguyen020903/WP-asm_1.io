@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-/*header*/
+/* Header */
 header {
     width: 100%;
     height: 70px;
@@ -38,8 +38,8 @@ nav {
     z-index: 1;
     width: 100%;
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 
 nav ul {
@@ -52,7 +52,7 @@ nav ul li a {
     height: 40px;
     line-height: 43px;
     margin: 8px;
-    padding: 0px 10px;
+    padding: 0 10px;
     display: flex;
     font-size: 1rem;
     text-transform: uppercase;
@@ -69,18 +69,18 @@ nav ul li a:hover {
     box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
 }
 
-nav .navbar_btn {
+nav .navbar-toggle {
     display: none;
 }
 
-/*body*/
+/* Body */
 main {
     position: relative;
     top: 10px;
     bottom: 10px;
 }
 
-.category_1 {
+.category {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -91,74 +91,43 @@ main {
     width: 80%;
     padding: 10px;
     margin: auto;
+    margin-bottom: 20px; /* Added margin between category divs */
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.category_1 .c1item,
-.category_2 .c2item {
-    order: 0;
-    background-size: 120%;
-    background-color: #f9f9f9;
-    min-height: 300px;
-}
-
-.category_2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-    min-width: 400px;
-    width: 80%;
-    padding: 10px;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.c1,
-.c2 {
+.category-link {
     order: -1;
     flex: 1 0 100%;
     align-items: center;
-
 }
 
-.c1 h1,
-.c2 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
+.book-link img {
+    width: 200px;
+    height: 320px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-/* Book's cover and title */
-.category_1 .b1 h2 {
+.book-link img:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.book-link h2 {
     color: #333;
     width: 200px;
     text-align: center;
 }
 
-.category_2 .b1 h2 {
-    color: #333;
-    width: 200px;
-    text-align: center;
-}
-
-/*footer*/
+/* Footer */
 footer {
     padding: 25px 0;
     background-color: #333;
     margin-top: 50px;
 }
 
-footer ul {
+.footer-list {
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -168,18 +137,16 @@ footer ul {
     text-align: right;
 }
 
-footer ul a {
+.footer-list a {
     color: #fff;
     text-decoration: none;
     opacity: 0.8;
 }
 
-footer ul li {
+.footer-list li {
     display: inline-block;
     padding: 0 15px;
-
 }
-
 
 /****Responsive****/
 
