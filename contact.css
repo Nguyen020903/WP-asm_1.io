@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: beige;
+    background-color: #f9f9f9;
 }
 
 .logo img {
@@ -29,19 +29,12 @@ header {
     position: relative;
 }
 
-main {
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-}
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 30px;
-    background-color: #FFDEAD;
-    box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
+    background-color: #333;
     z-index: 1;
     width: 100%;
     position: fixed;
@@ -64,7 +57,7 @@ nav ul li a {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    color: sienna;
+    color: #f9f9f9;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
 }
@@ -155,8 +148,8 @@ input[type="radio"] {
 /*footer*/
 footer {
     padding: 25px 0;
-    background-color: #FFDEAD;
-    margin-top: 95px;
+    background-color: #333;
+    margin-top: 50px;
 }
 
 footer ul {
@@ -170,7 +163,7 @@ footer ul {
 }
 
 footer ul a {
-    color: sienna;
+    color: #fff;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -183,7 +176,9 @@ footer ul li {
 
 /****Responsive****/
 
-@media (max-width:960px) {
+@media screen and (max-width:960px) {
+
+    /*navbar*/
     nav {
         justify-content: space-between;
         height: 65px;
@@ -194,8 +189,8 @@ footer ul li {
         position: absolute;
         top: 65px;
         left: 0px;
-        background-color: tan;
-        border-bottom: 4px solid sienna;
+        background-color: #fff;
+        border-bottom: 4px solid #596e79;
         width: 100%;
     }
 
@@ -203,17 +198,18 @@ footer ul li {
         width: 100%;
     }
 
-    nav .navbar li a {
+    .navbar li a {
         width: 100%;
         height: 40px;
         justify-content: center;
         align-items: center;
         margin: 0px;
         padding: 25px;
-        border: 1px solid sienna;
+        border: 1px solid #596e79;
+        color: #333;
     }
 
-    nav .navbar-icon {
+    .navbar-icon {
         cursor: pointer;
         float: right;
         padding: 28px 20px;
@@ -221,8 +217,8 @@ footer ul li {
         user-select: none;
     }
 
-    nav .navbar-icon .nav-icon {
-        background-color: tan;
+    .nav-icon {
+        background-color: #fff;
         display: block;
         height: 2px;
         position: relative;
@@ -230,9 +226,9 @@ footer ul li {
         width: 18px;
     }
 
-    nav .navbar-icon .nav-icon:before,
-    nav .navbar-icon .nav-icon::after {
-        background: tan;
+    .navbar-icon .nav-icon:before,
+    .navbar-icon .nav-icon::after {
+        background: #fff;
         content: "";
         display: block;
         height: 100%;
@@ -241,33 +237,33 @@ footer ul li {
         width: 100%;
     }
 
-    nav .navbar-icon .nav-icon:before {
+    .navbar-icon .nav-icon:before {
         top: 5px;
     }
 
-    nav .navbar-icon .nav-icon:after {
+    .navbar-icon .nav-icon:after {
         top: -5px;
     }
 
-    nav .navbar-btn:checked~.navbar-icon .nav-icon {
+    .navbar-btn:checked~.navbar-icon .nav-icon {
         background: transparent;
     }
 
-    nav .navbar-btn:checked~.navbar-icon .nav-icon:before {
+    .navbar-btn:checked~.navbar-icon .nav-icon:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    nav .navbar-btn:checked~.navbar-icon .nav-icon:after {
+    .navbar-btn:checked~.navbar-icon .nav-icon:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    nav .navbar-btn {
+    .navbar-btn {
         display: none;
     }
 
-    nav .navbar-btn:checked~.navbar {
+    .navbar-btn:checked~.navbar {
         display: block;
     }
 
