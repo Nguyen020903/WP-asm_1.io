@@ -99,7 +99,8 @@ main {
     width: 80%;
     padding: 10px;
     margin: auto;
-    margin-bottom: 20px; /* Added margin between category divs */
+    margin-bottom: 30px;
+    /* Added margin between category divs */
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -109,23 +110,51 @@ main {
     order: -1;
     flex: 1 0 100%;
     align-items: center;
+    text-align: center;
+}
+
+.category-link h1 {
+    margin: 10px 0 15px 0;
+    color: #333;
 }
 
 .book-link img {
     width: 200px;
     height: 320px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
 }
 
 .book-link img:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
 }
 
 .book-link h2 {
     color: #333;
     width: 200px;
     text-align: center;
+    margin-top: 10px;
+}
+
+/* Style for the "More Categories" button */
+.more-categories-button {
+    background-color: #de2454;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+.more-categories-button:hover {
+    background-color: #ff497d;
 }
 
 /* Footer */
