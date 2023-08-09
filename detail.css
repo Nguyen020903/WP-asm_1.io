@@ -122,6 +122,7 @@ ul.breadcrumb li a:hover {
 .flex-container {
     display: flex;
     align-items: center;
+    margin: 0 50px 0 50px;
 }
 
 #right {
