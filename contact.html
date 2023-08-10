@@ -13,121 +13,73 @@ Acknowledgement: AI and help from senior -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Book Shop</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="Assets\Images\logo.png" alt="logo">
-                <h3>The Book Store</h3>
-            </a>
-            <input class="navbar-btn" type="checkbox" id="navbar-btn">
-            <label class="navbar-icon" for="navbar-btn">
-                <span class="nav-icon"></span>
-            </label>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Fiction.html">Fiction</a></li>
-                <li><a href="Non-Fiction.html">Non-Fiction</a></li>
-                <li><a href="Kids.html">Kids</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <form action="">
-                <h1>Contact Us</h1>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="c-purpose">Contact Purpose</label>
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="Assets\Images\logo.png" alt="logo">
+                    <h3>The Book Store</h3>
+                </a>
+                <input class="navbar-toggle" type="checkbox" id="navbar-toggle">
+                <label class="navbar-icon" for="navbar-toggle">
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Fiction.html">Fiction</a></li>
+                    <li><a href="Non-Fiction.html">Non-Fiction</a></li>
+                    <li><a href="Kids.html">Kids</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="flex-container">
+                <form>
+                    <h1>Contact Us</h1>
+                    <label for="purpose">Contact Purpose</label>
+                    <select name="purpose" >
+                        <option value="buy">I want to buy books</option>
+                        <option value="sell">I want to sell books</option>
+                    </select>
+                    <label for="name">Name</label>
+                    <input type="text"  name="name" placeholder="Enter your full name">
+                    <label for="email">Email</label>
+                    <input type="email"  name="email" placeholder="Enter your email">
+                    <label for="tel">Phone</label>
+                    <input type="number"  name="phone" placeholder="Enter your phone number" oninput="limitPhoneNumberLength(this)">
+                    <label for="checkbox">How can we contact you:</label>
+                    <label>
+                        <input type="checkbox">
+                        By email
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        By phone
+                    </label>
+                    <div class="form-section">
+                    <label for="radio">Do you want to receive our weekly newsletter:</label>
+                    <label>
+                        <input type="radio" name="choice-radio" checked="checked">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="choice-radio">
+                        No
+                    </label>
                     </div>
-                    <div class="col-75">
-                        <select name="c-purpose" id="c-purpose">
-                            <option value="buy">I want to buy books</option>
-                            <option value="sell">I want to sell books</option>
-                        </select>
+                    <div class="form-section">
+                    <label for="note">Note</label>
+                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="name" name="name" placeholder="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="phone">Phone</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="number" id="phone" name="phone" placeholder="">
-                    </div>
-                </div>
-                <div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="checkbox">How can we contact you:</label>
-                        </div>
-                        <div class="col-75">
-                            <div>
-                                <label>
-                                    <input type="checkbox">
-                                    By email
-                                </label>
-                                <label>
-                                    <input type="checkbox">
-                                    By phone
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="radio">Do you want to receive our weekly newsletter:</label>
-                        </div>
-                        <div class="col-75">
-                            <div>
-                                <label>
-                                    <input type="radio" name="choice-radio" checked="checked">
-                                    Yes
-                                </label>
-                                <label>
-                                    <input type="radio" name="choice-radio">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="note">Note</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea name="note" id="note" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                    <div class="row">
-                        <input type="reset" value="Reset">
-                    </div>
-            </form>
-        </div>
-    </main>
+                </form>
+            </div>
+        </main>
     </div>
     <footer>
         <ul class="footer-list">
