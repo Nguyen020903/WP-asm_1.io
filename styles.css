@@ -8,7 +8,7 @@ Acknowledgement: AI and help from senior */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -120,7 +120,6 @@ main {
 .book-link img {
     width: 200px;
     height: 320px;
-    transition: transform 0.3s ease;
 }
 
 .book-link img:hover {
@@ -128,7 +127,14 @@ main {
     transition: transform 0.3s ease;
 }
 
-.book-link h2 {
+.book-link h4 {
+    color: #333;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.book-link h3 {
     color: #333;
     width: 200px;
     text-align: center;
@@ -183,7 +189,7 @@ footer {
 
 /****Responsive****/
 
-@media screen and (max-width:992px) {
+@media (max-width:992px) {
 
     /*navbar*/
     nav {
@@ -252,25 +258,36 @@ footer {
         top: -5px;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger {
+    .navbar-toggle:checked~.navbar-icon .hamburger {
         background: transparent;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:before {
+    .navbar-toggle:checked~.navbar-icon .hamburger:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:after {
+    .navbar-toggle:checked~.navbar-icon .hamburger:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .navbar_btn {
+    .navbar-toggle {
         display: none;
     }
 
-    .navbar_btn:checked~.navbar {
+    .navbar-toggle:checked~.navbar {
         display: block;
+    }
+
+    /* footer */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        padding: 5px 15px;
     }
 }

@@ -9,7 +9,7 @@ Acknowledgement: AI and help from senior */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -184,7 +184,7 @@ footer {
 
 /****Responsive****/
 
-@media screen and (max-width:960px) {
+@media (max-width:960px) {
 
     /*navbar*/
     nav {
@@ -253,25 +253,36 @@ footer {
         top: -5px;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger {
+    .navbar-toggle:checked~.navbar-icon .hamburger {
         background: transparent;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:before {
+    .navbar-toggle:checked~.navbar-icon .hamburger:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:after {
+    .navbar-toggle:checked~.navbar-icon .hamburger:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .navbar_btn {
+    .navbar-toggle {
         display: none;
     }
 
-    .navbar_btn:checked~.navbar {
+    .navbar-toggle:checked~.navbar {
         display: block;
+    }
+
+    /* footer */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        padding: 5px 15px;
     }
 }

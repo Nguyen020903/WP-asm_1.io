@@ -9,7 +9,7 @@ Acknowledgement: AI and help from senior */
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -186,7 +186,7 @@ footer ul li {
 
 /****Responsive****/
 
-@media screen and (max-width:960px) {
+@media (max-width:960px) {
 
     /*navbar*/
     nav {
@@ -283,5 +283,16 @@ footer ul li {
     input[type=reset] {
         width: 100%;
         margin-top: 0;
+    }
+
+    /* footer */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        padding: 5px 15px;
     }
 }

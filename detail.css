@@ -8,7 +8,7 @@ Acknowledgement: AI and help from senior */
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -147,6 +147,11 @@ ul.breadcrumb li a:hover {
     width: 33.33%;
 }
 
+#left img {
+    max-width: 100%;
+    height: auto;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -170,6 +175,7 @@ button {
     margin-left: 100px;
     margin: 0 100px 0 100px;
     flex-wrap: wrap;
+    font-family: sans-serif;
 }
 
 
@@ -204,7 +210,7 @@ footer {
 /****Responsive****/
 
 
-@media screen and (max-width:960px) {
+@media (max-width:960px) {
 
     /*navbar*/
     nav {
@@ -273,25 +279,25 @@ footer {
         top: -5px;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger {
+    .navbar-toggle:checked~.navbar-icon .hamburger {
         background: transparent;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:before {
+    .navbar-toggle:checked~.navbar-icon .hamburger:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .navbar_btn:checked~.navbar-icon .hamburger:after {
+    .navbar-toggle:checked~.navbar-icon .hamburger:after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .navbar_btn {
+    .navbar-toggle {
         display: none;
     }
 
-    .navbar_btn:checked~.navbar {
+    .navbar-toggle:checked~.navbar {
         display: block;
     }
     /*row and columns*/
@@ -322,5 +328,15 @@ footer {
         /* Add some margin between images */
     }
 
+    /* footer */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        padding: 5px 15px;
+    }
 
 }
