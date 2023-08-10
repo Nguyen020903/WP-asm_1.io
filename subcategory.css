@@ -106,16 +106,13 @@ main {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.category-link {
+.category h1 {
     order: -1;
     flex: 1 0 100%;
-    align-items: center;
-    text-align: center;
-}
-
-.category-link h1 {
     margin: 10px 0 15px 0;
     color: #333;
+    text-align: center;
+    font-size: xx-large;
 }
 
 .book-link img {
