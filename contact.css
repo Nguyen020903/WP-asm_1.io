@@ -15,6 +15,14 @@ Acknowledgement: AI and help from senior */
 
 body {
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*this make the footer stay at the bottom of the page */
+ .wrapper {  
+    flex: 1;
 }
 
 .logo img {
@@ -159,7 +167,6 @@ input[type="radio"] {
 footer {
     padding: 25px 0;
     background-color: #333;
-    margin-top: 50px;
 }
 
 footer ul {

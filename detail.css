@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    border-radius: 10px;
+}
+
 /*header*/
 header {
     width: 100%;
@@ -142,6 +146,7 @@ nav .navbar-toggle {
 
 
 button {
+    margin: 10px 0;
     color: #de2454;
     border-color: #de2454;
     font-size: 25px;
@@ -171,6 +176,12 @@ button {
     margin: 5px 10px;
 }
 
+.detail:hover {
+    transform: scale(2.0);
+    transition: 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
 /*footer*/
 footer {

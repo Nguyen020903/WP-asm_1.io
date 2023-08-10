@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    border-radius: 10px;
+}
+
 /* Header */
 header {
     width: 100%;
