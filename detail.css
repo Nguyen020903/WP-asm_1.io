@@ -13,7 +13,7 @@ Acknowledgement: AI and help from senior */
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
 }
 
 .logo img {
@@ -83,40 +83,24 @@ nav .navbar-toggle {
 /*body*/
 /*breadcrumb*/
 .breadcrumb {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     width: 93%;
     margin-left: 5%;
-}
-
-ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
     background-color: #fff;
 }
 
-ul.breadcrumb li {
-    color: #333;
-    display: inline;
-    font-size: 18px;
+.breadcrumb h2 {
+    margin: 5px 10px;
 }
 
-ul.breadcrumb li+li:before {
-    padding: 8px;
+.breadcrumb h2 a {
     color: #333;
-    content: ">";
 }
 
-ul.breadcrumb li a {
-    color: #333;
-    text-decoration: none;
-}
-
-ul.breadcrumb li a:hover {
-    color: #FFDEAD;
-    text-decoration: none;
-}
 
 /*Main content*/
 .flex-container {
@@ -129,7 +113,6 @@ ul.breadcrumb li a:hover {
     padding: 70px 0;
     text-align: center;
     margin: 10px 50px 10px;
-    justify-content: space-around;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -140,7 +123,6 @@ ul.breadcrumb li a:hover {
 }
 
 .column {
-
     text-align: center;
     float: left;
     padding: 10px;
@@ -176,6 +158,17 @@ button {
     margin: 0 100px 0 100px;
     flex-wrap: wrap;
     font-family: sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+#book-info h2{
+    margin: 5px 10px;
+}
+
+#book-info p {
+    margin: 5px 10px;
 }
 
 
@@ -328,6 +321,9 @@ footer {
         /* Add some margin between images */
     }
 
+    #book-info {
+        margin: 10px;
+    }
     /* footer */
     .footer-list {
         display: flex;

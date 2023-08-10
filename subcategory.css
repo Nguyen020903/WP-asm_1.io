@@ -14,7 +14,7 @@ Acknowledgement: AI and help from senior */
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
 }
 
 .logo img {
@@ -95,7 +95,6 @@ main {
     justify-content: space-around;
     position: relative;
     top: 10px;
-    min-width: 400px;
     width: 80%;
     padding: 10px;
     margin: auto;
@@ -129,7 +128,7 @@ main {
     /* Add a smooth transition effect */
 }
 
-.book-link h2 {
+.book-link h4 {
     color: #333;
     width: 200px;
     text-align: center;
