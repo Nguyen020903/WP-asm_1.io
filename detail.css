@@ -84,6 +84,12 @@ nav .navbar-toggle {
     display: none;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
 /*body*/
 /*breadcrumb*/
 .breadcrumb {
@@ -147,12 +153,16 @@ nav .navbar-toggle {
 
 button {
     margin: 10px 0;
-    color: #de2454;
-    border-color: #de2454;
+    color: #fff;
+    background-color: #de2454;
+    border: none;
     font-size: 25px;
     border-radius: 25px;
-    background-color: #fff;
-    padding: 5px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #ff497d;
 }
 
 /*book-info*/

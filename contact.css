@@ -89,6 +89,12 @@ nav .navbar-btn {
     display: none;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
 /*body*/
 .container {
     color: #333;
