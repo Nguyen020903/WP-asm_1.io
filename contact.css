@@ -82,9 +82,9 @@ nav ul li a {
 
 nav ul li a:hover {
     border-radius: 2px;
-    background-color: sandybrown;
-    color: #FFDEAD;
-    box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
+    background-color: #edb124;
+    color: #ffdb85;
+    box-shadow: 2px 2px 20px #f7af05;
 }
 
 nav .navbar-toggle {
