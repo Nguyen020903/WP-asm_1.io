@@ -1,11 +1,13 @@
-/* WP-asm_1.io
-RMIT University Vietnam
+ /* RMIT University Vietnam
 Course: COSC2430 Web Programming
 Semester: 2023A
 Assessment: Assignment 1
 Author: Nguyen Hai Nguyen
 ID: Your student ids3978275
-Acknowledgement: AI and help from senior */
+Acknowledgement: Here some of the website I used to get a idea on design and content:
+                https://bookshop.org/ 
+                https://www.ebay.com/
+                as well as some other Youtube tutorial */
 * {
     margin: 0px;
     padding: 0px;
@@ -14,7 +16,7 @@ Acknowledgement: AI and help from senior */
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

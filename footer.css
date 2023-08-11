@@ -1,0 +1,335 @@
+ /* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hai Nguyen
+ID: Your student ids3978275
+Acknowledgement: Here some of the website I used to get a idea on design and content:
+                https://bookshop.org/ 
+                https://www.ebay.com/
+                as well as some other Youtube tutorial */
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-family: sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #e0e0e0;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+
+ /*this make the footer stay at the bottom of the page */
+ .wrapper {
+     flex: 1;
+ }
+
+ .logo img {
+     max-height: 100%;
+     height: 45px;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ /*header*/
+ header {
+     width: 100%;
+     height: 70px;
+     position: relative;
+ }
+
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 0 30px;
+     background-color: #333;
+     z-index: 1;
+     width: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
+ }
+
+ nav ul {
+     display: flex;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li a {
+     height: 40px;
+     line-height: 43px;
+     margin: 8px;
+     padding: 0 10px;
+     display: flex;
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 400;
+     color: #fff;
+     letter-spacing: 1px;
+     transition: 0.3s ease-in-out;
+ }
+
+ nav ul li a:hover {
+     border-radius: 2px;
+     background-color: sandybrown;
+     color: #FFDEAD;
+     box-shadow: 2px 2px 20px rgba(230, 182, 111, 0.897);
+ }
+
+ nav .navbar-toggle {
+     display: none;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     color: #fff;
+ }
+
+ /*body*/
+ .flex-container {
+     display: flex;
+     flex-direction: column;
+     margin: 5px 5%;
+     width: 90%;
+ }
+
+ /* Style inputs, select elements and textareas */
+ input[type=text],
+ input[type=email],
+ input[type=number],
+ select,
+ textarea {
+     width: 100%;
+     padding: 12px;
+     margin: 5px 0;
+     border: 1px solid #ccc;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     border-radius: 10px;
+     resize: vertical;
+ }
+
+ .input-section {
+     display: flex;
+     align-items: center;
+ }
+
+ .input-section label {
+     width: 150px;
+     /* Adjust the width as needed */
+     display: inline-block;
+     margin-right: 10px;
+     /* Add some spacing between label and select */
+ }
+
+ /* Phone input */
+ .phone-input {
+     display: flex;
+     width: 100%;
+ }
+
+ #country-dropdown {
+     width: 10%;
+     margin-right: 5px;
+ }
+
+ #phone {
+     width: 100%;
+ }
+
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     appearance: none;
+     margin: 0;
+ }
+
+
+ /* Style the submit button */
+ input[type=submit],
+ input[type=reset] {
+     background-color: #fff;
+     color: #333;
+     padding: 15px 25px;
+     margin: 2px;
+     border: 1px solid #ccc;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     border-radius: 4px;
+     cursor: pointer;
+     float: right;
+     font-size: large;
+ }
+
+ input[type="checkbox"],
+ input[type="radio"] {
+     width: 10px;
+ }
+
+ .form-section {
+     margin: 5px 0;
+ }
+
+ /*footer*/
+ footer {
+     padding: 25px 0;
+     background-color: #333;
+ }
+
+ footer ul {
+     margin-top: 0;
+     padding: 0;
+     list-style: none;
+     font-size: 16px;
+     line-height: 1.6;
+     margin-bottom: 0;
+     text-align: right;
+ }
+
+ footer ul a {
+     color: #fff;
+     text-decoration: none;
+     opacity: 0.8;
+ }
+
+ footer ul li {
+     display: inline-block;
+     padding: 0 15px;
+
+ }
+
+ /****Responsive****/
+
+ @media (max-width:992px) {
+
+     /*navbar*/
+     nav {
+         justify-content: space-between;
+         height: 65px;
+     }
+
+     .navbar {
+         display: none;
+         position: absolute;
+         top: 65px;
+         left: 0px;
+         background-color: #fff;
+         border-bottom: 4px solid #596e79;
+         width: 100%;
+     }
+
+     .navbar li {
+         width: 100%;
+     }
+
+     .navbar li a {
+         width: 100%;
+         height: 40px;
+         justify-content: center;
+         align-items: center;
+         margin: 0px;
+         padding: 25px;
+         border: 1px solid #596e79;
+         color: #333;
+     }
+
+     .navbar-icon {
+         cursor: pointer;
+         float: right;
+         padding: 28px 20px;
+         position: relative;
+         user-select: none;
+     }
+
+     .hamburger {
+         background-color: #fff;
+         display: block;
+         height: 2px;
+         position: relative;
+         transition: 0.2s ease-out;
+         width: 18px;
+     }
+
+     .navbar-icon .hamburger:before,
+     .navbar-icon .hamburger::after {
+         background: #fff;
+         content: "";
+         display: block;
+         height: 100%;
+         position: absolute;
+         transition: all ease-out 0.3s;
+         width: 100%;
+     }
+
+     .navbar-icon .hamburger:before {
+         top: 5px;
+     }
+
+     .navbar-icon .hamburger:after {
+         top: -5px;
+     }
+
+     .navbar-toggle:checked~.navbar-icon .hamburger {
+         background: transparent;
+     }
+
+     .navbar-toggle:checked~.navbar-icon .hamburger:before {
+         transform: rotate(-45deg);
+         top: 0;
+     }
+
+     .navbar-toggle:checked~.navbar-icon .hamburger:after {
+         transform: rotate(45deg);
+         top: 0;
+     }
+
+     .navbar-toggle {
+         display: none;
+     }
+
+     .navbar-toggle:checked~.navbar {
+         display: block;
+     }
+
+     /* main */
+     .input-section {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .input-section label {
+         width: 100%;
+         margin-right: 0;
+         margin-bottom: 5px;
+     }
+
+     #country-dropdown {
+         min-width: 60px;
+     }
+
+     .phone-input {
+         display: flex;
+         width: 100%;
+     }
+
+     /* footer */
+     .footer-list {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .footer-list li {
+         padding: 5px 15px;
+     }
+ }
