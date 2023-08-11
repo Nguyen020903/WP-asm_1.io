@@ -41,31 +41,39 @@ Acknowledgement: AI and help from senior -->
             <div class="flex-container">
                 <form>
                     <h1>Contact Us</h1>
-                    <label for="purpose">Contact Purpose</label>
-                    <select name="purpose">
-                        <option value="buy">I want to buy books</option>
-                        <option value="sell">I want to sell books</option>
-                    </select>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter your full name">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter your email">
-                    <label for="tel">Phone</label>
-                    <div class="phone">
-                    <select id="country-dropdown">
-                        <option value="65">🇸🇬 +65 (Singapore)</option>
-                        <option value="60">🇲🇾 +60 (Malaysia)</option>
-                        <option value="66">🇹🇭 +66 (Thailand)</option>
-                        <option value="62">🇮🇩 +62 (Indonesia)</option>
-                        <option value="84">🇻🇳 +84 (Vietnam)</option>
-                        <option value="63">🇵🇭 +63 (Philippines)</option>
-                        <option value="95">🇲🇲 +95 (Myanmar)</option>
-                        <option value="855">🇰🇭 +855 (Cambodia)</option>
-                        <option value="856">🇱🇦 +856 (Laos)</option>
-                    </select>
-                    <input type="number" id="phone" name="phone" placeholder="Enter your phone number"
-                        oninput="limitPhoneNumberLength(this)">
-                    </div>   
+                    <div class="input-section">
+                        <label for="purpose">Contact Purpose</label>
+                        <select name="purpose">
+                            <option value="buy">I want to buy books</option>
+                            <option value="sell">I want to sell books</option>
+                        </select>
+                    </div>
+                    <div class="input-section">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="input-section">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-section">
+                        <label for="tel">Phone</label>
+                        <div class="phone-input">
+                            <select id="country-dropdown">
+                                <option value="65">🇸🇬 +65 (Singapore)</option>
+                                <option value="60">🇲🇾 +60 (Malaysia)</option>
+                                <option value="66">🇹🇭 +66 (Thailand)</option>
+                                <option value="62">🇮🇩 +62 (Indonesia)</option>
+                                <option value="84">🇻🇳 +84 (Vietnam)</option>
+                                <option value="63">🇵🇭 +63 (Philippines)</option>
+                                <option value="95">🇲🇲 +95 (Myanmar)</option>
+                                <option value="855">🇰🇭 +855 (Cambodia)</option>
+                                <option value="856">🇱🇦 +856 (Laos)</option>
+                            </select>
+                            <input type="number" id="phone" name="phone" placeholder="Enter your phone number"
+                                oninput="limitPhoneNumberLength(this)">
+                        </div>
+                    </div>
                     <label for="checkbox">How can we contact you:</label>
                     <label>
                         <input type="checkbox">

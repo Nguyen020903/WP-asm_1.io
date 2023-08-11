@@ -187,6 +187,10 @@ button:hover {
     margin: 5px 10px;
 }
 
+.detail {
+    aspect-ratio: 4/3;
+}
+
 .detail:hover {
     transform: scale(2.0);
     transition: 0.3s ease;
